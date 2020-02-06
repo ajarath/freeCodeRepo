@@ -18,7 +18,12 @@
 
 /** # SCHEMAS and MODELS #
 /*  ====================== */
-
+const personSchema = new schema ({
+  name:
+  {type:String,required:true},
+  age:Number,
+  food:[String]
+})
 /** 2) Create a 'Person' Model */
 
 // First of all we need a **Schema**. Each schema maps to a MongoDB collection
