@@ -18,13 +18,11 @@
 
 /** # SCHEMAS and MODELS #
 /*  ====================== */
-const PersonSchema = new schema ({
-  name:
-  {type:String,required:true},
-  age:Number,
-  food:[String]
-})
-var Person = mongoose.model('Person', PersonSchema);
+const personSchema = new Schema({
+  name: { type: String, required: true },
+  age: Number,
+  favoriteFoods: [String]
+});
 /** 2) Create a 'Person' Model */
 
 // First of all we need a **Schema**. Each schema maps to a MongoDB collection
